@@ -17,7 +17,7 @@ export const mutations = {
     },
     remove(state, index){
         const itemIndex = state.cartItems.findIndex(pdt => pdt.id === index);
-        state.cartItems.splice(itemIndex);
+        state.cartItems.splice(itemIndex, 1);
     },
     custom(state, val){
         const itemIndex = state.cartItems.findIndex(pdt => pdt.id === val.index);
